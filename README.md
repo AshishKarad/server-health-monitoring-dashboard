@@ -64,7 +64,7 @@ python app.py
 Open:
 
 ```text
-http://localhost:5000
+http://<EC2-IP>:5000
 ```
 
 ---
@@ -86,7 +86,7 @@ docker run -d -p 5000:5000 server-health-monitoring-dashboard
 Open:
 
 ```text
-http://localhost:5000
+http://<EC2-IP>:5000
 ```
 
 ---
