@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-dashboard-deployment
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: server-dashboard
+
+  template:
+    metadata:
+      labels:
+        app: server-dashboard
+
+    spec:
+      containers:
+      - name: server-dashboard
+        image: ashishkarad5566/server-health-monitoring-dashboard:latest
+
+        ports:
+        - containerPort: 5000
